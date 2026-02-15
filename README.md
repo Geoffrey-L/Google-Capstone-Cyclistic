@@ -41,7 +41,7 @@ The data is located in Zip files stored on the AWS Cloud, containing CSV files. 
 * **Reliable & Original:** The data is sourced directly from the operator (Motivate International Inc.), ensuring it is an internal, primary dataset without third-party alteration.
 * **Comprehensive:** The dataset includes all key metrics (start/end times, station names, user types) required to answer the business question.
 * **Current:** The analysis covers the most recent 12-month period (Feb 2025 - Jan 2026), making the insights relevant to current trends.
-* **Cited:** The data is provided under a formal [Data License Agreement](lien_vers_licence_si_disponible). The City of Chicago owns all rights, title, and interest in the Data.
+* **Cited:** The data is provided under a formal [Data License Agreement](https://divvybikes.com/data-license-agreement). The City of Chicago owns all rights, title, and interest in the Data.
 
 **Privacy & Ethics:**
 The data is strictly anonymous. It does not contain personally identifiable information (PII) about riders, ensuring the protection of individual identities.
@@ -54,7 +54,7 @@ The dataset is structured with clear column headers. Technical acronyms for geog
 ## 3. Phase 3: PROCESS (Python)
 **Goal:** Clean, merge, and prepare the raw data for analysis.
 
-I used **Python (Pandas)** in a Jupyter Notebook to handle the large volume of data (approx. [Insérer nombre] million rows).
+I used **Python (Pandas)** in a Jupyter Notebook to handle the large volume of data (approx. [5,5] million rows).
 
 **Key Steps Performed:**
 * **Merging:** Combined 12 separate CSV files into a single dataframe.
@@ -66,7 +66,7 @@ I used **Python (Pandas)** in a Jupyter Notebook to handle the large volume of d
     * Created a `day_of_week` column to analyze weekly trends.
 * **Quality Control:** Filtered out "bad data" (e.g., negative ride lengths or maintenance trips).
 
-👉 **[View the Python Cleaning Notebook here](LIEN_VERS_VOTRE_NOTEBOOK_PYTHON_SUR_GITHUB)**
+👉 **[View the Python Cleaning Notebook here](https://github.com/Geoffrey-L/Google-Capstone-Cyclistic/blob/main/Capstone_Processing1.ipynb)**
 
 ---
 
@@ -80,7 +80,7 @@ Once the data was clean, I used **DuckDB** (SQL within Jupyter) to perform the e
 * **Weekly Patterns:** Members dominate usage during weekdays (commuting), while casual riders peak on weekends (leisure).
 * **Monthly Trends:** A massive spike in casual usage occurs during the summer months (June-August).
 
-👉 **[View the SQL Analysis Notebook here](LIEN_VERS_VOTRE_NOTEBOOK_SQL_SUR_GITHUB)**
+👉 **[View the SQL Analysis Notebook here](https://github.com/Geoffrey-L/Google-Capstone-Cyclistic/blob/main/Capstone_Analysis.ipynb)**
 
 ---
 
@@ -89,8 +89,8 @@ Once the data was clean, I used **DuckDB** (SQL within Jupyter) to perform the e
 
 I created an interactive dashboard in Tableau to illustrate the differences between the two user groups.
 
-![Dashboard Screenshot](LIEN_VERS_VOTRE_IMAGE_DASHBOARD_DANS_DOSSIER_IMAGES.png)
+![Dashboard Screenshot](https://github.com/Geoffrey-L/Google-Capstone-Cyclistic/blob/main/Cyclistic_Dashboard.png)
 
 * **Key Visualization:** The Heatmap clearly shows the contrast between the "9-to-5" commute pattern of members vs. the weekend afternoon preference of casuals.
 
-📊 **[Explore the Interactive Dashboard on Tableau Public](LIEN_VERS_VOTRE_TABLEAU_PUBLIC)**
+📊 **[Explore the Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/geoffrey.liebart/viz/Capstone_project_17709944497150/Tableaudebord1)**
