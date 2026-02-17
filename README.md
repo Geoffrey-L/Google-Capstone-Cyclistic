@@ -25,13 +25,10 @@ Design a User Conversion Strategy.
 
 ## 1. Phase 1: ASK
 **Business Task:**
-Identify differences in usage patterns between casual riders and annual members to design a marketing strategy aimed at converting casual riders into annual members.
+Identify differences in usage patterns between casual riders and annual members to design a marketing strategy aimed at converting casual riders into annual members (using the last 12 months of user data to complete the task).
 
 **Key Stakeholders:**
 Lily Moreno (Director of Marketing), Cyclistic Marketing Analytics Team, Cyclistic Executive Team.
-
-**Strategy:**
-In-depth analysis of the last 12 months of user data to identify patterns in both groups.
 
 ---
 
@@ -96,6 +93,28 @@ I created an interactive dashboard in Tableau to illustrate the differences betw
 
 ![Dashboard Screenshot](https://github.com/Geoffrey-L/Google-Capstone-Cyclistic/blob/main/Cyclistic_Dashboard.png)
 
-* **Key Visualization:** The Heatmap clearly shows the contrast between the "9-to-5" commute pattern of members vs. the weekend afternoon preference of casuals.
+**Key Visualization:** This interactive dashboard highlights three fundamental differences in the use of Cyclistic bikes:
+  
+ * Annual Members use the service heavily on weekdays (Monday through Friday), suggesting utilitarian use (commuting). Conversely, Casual users are             more active on weekends, indicating recreational or tourist use;
+ * Members show a relatively smooth and stable activity pattern throughout the year, even in cooler periods. Casual users have very seasonal                    behavior, with a strong peak in summer (+17% of trips in July/August) and a drastic drop in winter.
+ * The heat map reveals that members have two very clear peaks of activity: 8 a.m. and 5 p.m. (office hours). Occasional users have a smoother curve            that gradually increases throughout the day, reaching its peak in the early afternoon (2pm-4pm).
 
 📊 **[Explore the Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/geoffrey.liebart/viz/Capstone_project_17709944497150/Tableaudebord1)**
+
+---
+
+## 6. Phase 6: ACT
+
+We successfully demonstrated how bike usage patterns differ significantly between our two user groups. Based on these findings, we can now suggest data-driven recommendations to help the company convert more casual riders into annual members :
+
+**Recommendations:**
+
+   * **Introduce a Seasonal "Summer Pass":** Given the massive activity peak in July and August, a specific summer subscription could serve as a stepping           stone. It would attract casual users initially, with the long-term objective of upgrading them to full annual members once they are in the                   ecosystem.
+   * **Target Weekend Riders for Membership Conversion:** Since casual riders are most active on weekends, we should launch specific "Weekend Membership"           offers or provide incentives for signing up for an Annual Plan during the weekend (e.g., "Sign up this Saturday and get your first month free").
+   * **Launch a Spring Campaign:** Marketing efforts should intensify in late spring (April/May), just before the usage spike. Capturing these users                right before their peak activity period could maximize the Return on Investment (ROI).
+
+      
+      
+**Next Steps & Future Analysis:**
+
+To further refine this strategy, it would be relevant to analyze the geographical distribution of casual trips. Visualizing station data could help identify strategic locations for advertising campaigns or determine where to expand the station network to better serve the users.
