@@ -30,6 +30,9 @@ Identify differences in usage patterns between casual riders and annual members 
 **Key Stakeholders:**
 Lily Moreno (Director of Marketing), Cyclistic Marketing Analytics Team, Cyclistic Executive Team.
 
+**Strategy:**
+In-depth analysis of the last 12 months of user data to identify patterns in both groups.
+
 ---
 
 ## 2. Phase 2: PREPARE
@@ -54,17 +57,19 @@ The dataset is structured with clear column headers. Technical acronyms for geog
 ## 3. Phase 3: PROCESS (Python)
 **Goal:** Clean, merge, and prepare the raw data for analysis.
 
-I used **Python (Pandas)** in a Jupyter Notebook to handle the large volume of data (approx. [5,5] million rows).
+I used **Python (Pandas)** in a Jupyter Notebook to handle the large volume of data (approx. 5,5 million rows).
 
 **Key Steps Performed:**
 * **Merging:** Combined 12 separate CSV files into a single dataframe.
-* **Data Cleaning:**
-    * Removed rows with missing station names or IDs.
-    * Checked for and removed duplicate entries.
+* **Data Cleaning and Standardization:**
+    * Standardized the station references based on the most recent data.
+    * Checked for and removed duplicate entries.  
 * **Feature Engineering:**
-    * Created a `ride_length` column (duration of trips).
+    * Created a `ride_length_minutes` column (duration of trips).
     * Created a `day_of_week` column to analyze weekly trends.
-* **Quality Control:** Filtered out "bad data" (e.g., negative ride lengths or maintenance trips).
+* **Quality Control:** Filtered out "bad data" (e.g., negative ride lengths, maintenance and micro trips).
+* **Handling Nulls:** Rows with missing station names were retained as they represent valid bike trips (verified via GPS coordinates). Only trip with technical anomalies were removed.
+
 
 👉 **[View the Python Cleaning Notebook here](https://github.com/Geoffrey-L/Google-Capstone-Cyclistic/blob/main/Capstone_Processing1.ipynb)**
 
